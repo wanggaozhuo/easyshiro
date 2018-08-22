@@ -28,5 +28,7 @@ public class MyRealm2 implements Realm {
         //如果身份认证验证成功，返回一个AuthenticationInfo实现；
         return new SimpleAuthenticationInfo(username, password, getName());
 
+
+
     }
 }

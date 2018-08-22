@@ -25,14 +25,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ini" value="2" />
-          <entry key="java" value="98" />
+          <entry key="java" value="107" />
           <entry key="txt" value="4" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="98" />
+          <entry key="JAVA" value="107" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="11" />
         </counts>
@@ -90,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/datasource/MyRealm2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state relative-caret-position="402">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -149,11 +149,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1015" />
-    <option name="y" value="46" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -365,7 +365,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534902401738</updated>
-      <workItem from="1534902405303" duration="8413000" />
+      <workItem from="1534902405303" duration="10069000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1534916891767</created>
@@ -417,7 +417,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8413000" />
+    <option name="totallyTimeSpent" value="10069000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,9 +438,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32998884" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" weight="0.32998884" />
       <window_info anchor="bottom" id="Messages" weight="0.32962137" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32962137" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -559,8 +559,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/datasource/MyRealm2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        <state relative-caret-position="402">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
