@@ -6,26 +6,46 @@ import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+
+import java.sql.SQLOutput;
 
 public class MyTest {
 
-    @Test
-    public void testHelloworld() {
+    @Before
+    public void testBefore(){
+        System.out.println("-----------------testBefore-----------------");
         //1、获取SecurityManager工厂，此处使用Ini配置文件初始化SecurityManager
-        Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro.ini");
-        factory = new IniSecurityManagerFactory("classpath:shiro-multi-realm.ini");
+        Factory<SecurityManager> factory;// = new IniSecurityManagerFactory("classpath:shiro.ini");
+        //factory = new IniSecurityManagerFactory("classpath:shiro-multi-realm.ini");
+        factory = new IniSecurityManagerFactory("classpath:shiro-jdbc-realm.ini");
+        //factory = new IniSecurityManagerFactory("classpath:shiro-authenticator-all-success.ini");
+
         //2、得到SecurityManager实例 并绑定给SecurityUtils
         SecurityManager securityManager = factory.getInstance();
         SecurityUtils.setSecurityManager(securityManager);
+    }
+
+    @Test
+    public void testHelloworld() {
+
         //3、得到Subject及创建用户名/密码身份验证Token（即用户身份/凭证）
         Subject subject = SecurityUtils.getSubject();
+
+        boolean hasRole = subject.hasRole("admin");
+        System.out.println("1.hasRole : " + hasRole);
+
 
         UsernamePasswordToken token = new UsernamePasswordToken("zhang", "123");
 
         try {
             //4、登录，即身份验证
             subject.login(token);
+
+            hasRole = subject.hasRole("admin");
+            System.out.println("2.hasRole : " + hasRole);
+
             System.out.println("login success");
         } catch (AuthenticationException e) {
             //5、身份验证失败

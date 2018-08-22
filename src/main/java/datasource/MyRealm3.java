@@ -3,10 +3,10 @@ package datasource;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.realm.Realm;
 
-public class MyRealm2 implements Realm {
+public class MyRealm3 implements Realm {
     @Override
     public String getName() {
-        return "myrealm2";
+        return "myrealm3";
     }
 
     @Override
@@ -19,7 +19,7 @@ public class MyRealm2 implements Realm {
     public AuthenticationInfo getAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         String username = (String) token.getPrincipal();  //得到用户名
         String password = new String((char[]) token.getCredentials()); //得到密码
-        if (!"lisi".equals(username)) {
+        if (!"zhang".equals(username)) {
             throw new UnknownAccountException(); //如果用户名错误
         }
         if (!"123".equals(password)) {
